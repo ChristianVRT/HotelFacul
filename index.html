@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="toggle-dark-mode" style="position: fixed; top: 10px; right: 10px;">Modo Escuro</button>
     <div class="container">
         <form id="reservation-form">
             <h2>Reserva de Hotel</h2>
@@ -26,8 +27,21 @@
                 <label for="checkout-date">Data de Check-Out</label>
                 <input type="date" id="checkout-date" name="checkout-date" required>
             </div>
+            <div class="form-group">
+                <label for="number-of-days">Número de Dias</label>
+                <input type="number" id="number-of-days" name="number-of-days" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="number-of-guests">Número de Hóspedes</label>
+                <input type="number" id="number-of-guests" name="number-of-guests" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="observations">Observações</label>
+                <textarea id="observations" name="observations" rows="4"></textarea>
+            </div>
             <button type="submit">Reservar</button>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
