@@ -171,3 +171,34 @@ body.dark-mode #toggle-dark-mode {
     background-color: #222;
     color: #ddd;
 }
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; 
+    gap: 10px; 
+}
+
+.newsletter input[type="checkbox"] {
+    cursor: pointer;
+    margin: 0; 
+    width: 20px; 
+    height: 20px; 
+}
+
+.newsletter label {
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 90%; 
+}
+
+
+@media (max-width: 600px) {
+    .newsletter label {
+        max-width: 80%; 
+    }
+}
